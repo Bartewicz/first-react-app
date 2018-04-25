@@ -1,8 +1,9 @@
 import React from 'react'
-import MyFirstComponent from './components/myFirstComponent'
+import MyFirstComponent from './components/MyFirstComponent'
 import Add from './components/Add'
 import Header from './components/Header'
 import MappingArray from './components/MappingArray'
+import MappingArray2 from './components/MappingArray2'
 
 const App = () => (
     <div>
@@ -30,6 +31,9 @@ const App = () => (
 
         <MappingArray />
         
+        <hr />
+
+        <MappingArray2 />
     </div>
 )
 
