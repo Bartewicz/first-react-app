@@ -1,13 +1,18 @@
 import React from 'react'
 
-const names = ['Ala', 'Ola', 'Ela', 'Ewa']
+const users = [
+    {name: 'Ala', key: 'user1'},
+    {name: 'Ola', key: 'user2'},
+    {name: 'Ela', key: 'user3'},
+    {name: 'Ewa', key: 'user4'}
+]
 
-const MappingArray = (properties) => (
+const MappingArray = () => (
     <h1>
         {
-            names.map((name) => <div key={name}>{name}</div>)
+            users.map(user => <div key={user.key}>{user.name}</div>)
         }
-    </h1>
+        </h1>
 )
 
 export default MappingArray
