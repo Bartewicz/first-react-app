@@ -1,5 +1,12 @@
 import React from 'react'
 import Header from './Header'
+import RaisedButton from 'material-ui/RaisedButton';
+
+const styles = {
+    btn: {
+        margin: '10px'
+    }
+}
 
 class CounterWithState extends React.Component {
     state = {
@@ -22,10 +29,23 @@ class CounterWithState extends React.Component {
 
         return (
             <div>
-                <Header text={this.state.count} isRed={true} />
+                <Header
+                    text={this.state.count}
+                    isRed={true}
+                />
                 <div>
-                    <button onClick={this.minusCount}> - </button>
-                    <button onClick={this.plusCount}> + </button>
+                    <RaisedButton
+                        label={'+'}
+                        primary={true}
+                        onClick={this.plusCount}
+                        style={styles.btn}
+                    />
+                    <RaisedButton
+                        label={'-'}
+                        secondary={true}
+                        onClick={this.minusCount}
+                        style={styles.btn}
+                    />
                 </div>
             </div >
         )
