@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 
 class CounterWithState extends React.Component {
     state = {
@@ -21,7 +22,7 @@ class CounterWithState extends React.Component {
 
         return (
             <div>
-                <h1>{this.state.count}</h1>
+                <Header text={this.state.count} isRed={true} />
                 <div>
                     <button onClick={this.minusCount}> - </button>
                     <button onClick={this.plusCount}> + </button>
