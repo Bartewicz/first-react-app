@@ -5,9 +5,18 @@ class CounterWithState extends React.Component {
         count: 0
     }
 
+
     render() {
-        const minusCount = () => { this.state.count-- }
-        const plusCount = () => { console.log('+') }
+        const minusCount = () => {
+            this.setState({
+                count: this.state.count - 1
+            })
+        }
+        const plusCount = () => {
+            this.setState({
+                count: this.state.count + 1
+            })
+        }
 
         return (
             <div>
