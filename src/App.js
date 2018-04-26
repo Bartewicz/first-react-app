@@ -4,6 +4,7 @@ import Add from './components/Add'
 import Header from './components/Header'
 import MappingArray from './components/MappingArray'
 import MappingArray2 from './components/MappingArray2'
+import CounterWithState from './components/CounterWithState'
 
 const App = () => (
     <div>
@@ -34,6 +35,10 @@ const App = () => (
         <hr />
 
         <MappingArray2 />
+
+        <hr />
+
+        <CounterWithState />
     </div>
 )
 
