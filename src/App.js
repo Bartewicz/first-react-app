@@ -12,7 +12,8 @@ const App = () => (
         <Add numberA={3} numberB={5} />
         <Add numberA={13} numberB={75} />
         <Header text={'Ala ma kota'} isRed={false}/>
-
+        
+        {/*
         <hr />
 
         <p>null: {null}</p>
@@ -25,7 +26,7 @@ const App = () => (
         <p>array [1, 2, 3]: {[1, 2, 3]}</p>
         <p>array ['Ala', 'Ola', 'Ela']: {['Ala', 'Ola', 'Ela']}</p>
         <div>array with JSX: {[<b key={1}>BOLD</b>, <h1 key={2}>H1</h1>]}</div>
-
+*/}
         {/* <p>object: {{}}</p> */}
 
         <hr />

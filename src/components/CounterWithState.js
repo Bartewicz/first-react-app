@@ -1,13 +1,20 @@
 import React from 'react'
 
 class CounterWithState extends React.Component {
+    state = {
+        count: 0
+    }
+
     render() {
+        const minusCount = () => { this.state.count-- }
+        const plusCount = () => { console.log('+') }
+
         return (
             <div>
-                <h1>Tu będzie liczba</h1>
+                <h1>{this.state.count}</h1>
                 <div>
-                    <button> - </button>
-                    <button> + </button>
+                    <button onClick={minusCount}> - </button>
+                    <button onClick={plusCount}> + </button>
                 </div>
             </div>
         )
