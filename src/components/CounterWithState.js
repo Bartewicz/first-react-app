@@ -9,30 +9,69 @@ const styles = {
 }
 
 class CounterWithState extends React.Component {
-    state = {
-        count: 0
+    constructor() {
+        super()
+
+        console.log('Component is created...')
+
+        this.state = {
+            count: 0
+        }
+
+        this.minusCount = () => {
+            this.setState({
+                count: this.state.count - 1
+            })
+        }
+
+        this.plusCount = () => {
+            this.setState({
+                count: this.state.count + 1
+            })
+        }
     }
 
-    minusCount = () => {
-        this.setState({
-            count: this.state.count - 1
-        })
+    // WILL BE DEPRECATED IN REACT 17
+    componentWillMount () {
+        console.log('Component will mount!')
+    }
+    
+    // We will be usually using this to fetch data from server
+    componentDidMount () {
+        console.log('Component did mount!')
+    }
+    
+    componentWillUnmount () {
+        console.log('Component will unmounted!')
+    }
+    
+    shouldComponentUpdate () {
+        console.log('Should component update?')
+        return true
+    }
+    
+    // WILL BE DEPRECATED IN REACT 17
+    componentWillReceiveProps () {
+        console.log('Ccomponent will receive props.')
     }
 
-    plusCount = () => {
-        this.setState({
-            count: this.state.count + 1
-        })
+    componentWillUpdate () {
+        console.log('Component will update!')
     }
-
-    render() {
-
+    
+    componentDidUpdate () {
+        console.log('Component did update!')
+    }
+    
+    render () {
+        console.log('Rendering.. ti ti ti...!')
+        
         return (
             <div>
                 <Header
                     text={this.state.count}
                     isRed={true}
-                />
+                    />
                 <div>
                     <RaisedButton
                         label={'+'}
