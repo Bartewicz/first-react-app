@@ -7,10 +7,11 @@ import Sidebar from './components/Sidebar'
 import Hello from './components/Hello'
 import MyFirstComponent from './components/MyFirstComponent'
 import Add from './components/Add'
-import Header from './components/Header'
+import CounterWithState from './components/CounterWithState'
 import MappingArray from './components/MappingArray'
 import MappingArray2 from './components/MappingArray2'
-import CounterWithState from './components/CounterWithState'
+import Header from './components/Header'
+import ToDo from './components/ToDo/ToDo'
 
 class App extends React.Component {
     state = {
@@ -42,6 +43,7 @@ class App extends React.Component {
                         />
 
                         <Route exact path={'/'} component={Dashboard} />
+                        <Route path={'/to-do'} component={ToDo} />
                         <Route path={'/hello/:name'} component={Hello} />
                         <Route path={'/what-react-displays'} render={
                             () => (

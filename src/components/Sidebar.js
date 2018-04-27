@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 
 const menuObjects = [
   { link: '/', name: 'Home' },
+  { link: '/to-do', name: 'ToDo' },
   { link: '/hello/Bartosz', name: 'Hello' },
   { link: '/what-react-displays', name: 'What React Displays' },
   { link: '/my-first-component', name: 'My First Component' },
