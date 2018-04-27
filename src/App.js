@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import AppBar from 'material-ui/AppBar'
 
 import Dashboard from './components/Dashboard'
+import ToDo from './components/ToDo'
 import Sidebar from './components/Sidebar'
 import Hello from './components/Hello'
 import MyFirstComponent from './components/MyFirstComponent'
@@ -11,7 +12,6 @@ import CounterWithState from './components/CounterWithState'
 import MappingArray from './components/MappingArray'
 import MappingArray2 from './components/MappingArray2'
 import Header from './components/Header'
-import ToDo from './components/ToDo/ToDo'
 
 class App extends React.Component {
     state = {
