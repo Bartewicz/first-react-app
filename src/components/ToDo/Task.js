@@ -1,9 +1,14 @@
 import React from 'react'
 
-const Task = (props) => {
+const Task = ({ name, deleteTask }) => (
   <div>
-    Task
+    {name}
+    <button
+      onClick={deleteTask}
+    >
+      X
+    </button>
   </div>
-}
+)
 
 export default Task
